@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100vh;
+}
+
+body {
+    background-color: #BEAEE2;
+    font-family: 'Trebuchet MS', Arial;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+form{
+    margin: 20 px 0;
+    background-color: #CDF0EA;
+    padding: 30px 25px;
+    border-radius: 5px;
+    animation: aparecer 1500ms;
+}
+
+form .inserir {
+    margin-bottom: 20px;
+}
+
+form .inserir label {
+
+    font-size: 15px;
+    color: black;
+}
+
+form .inserir input {
+
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 7px;
+    font-size: 10px;
+    color: #090910;
+    border-radius: 5px;
+    border: 1px solid #ccddef;
+    outline-color: black;
+}
+
+form .btn-login {
+
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #F7DBF0;
+    color: black;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+}
+
+.btn-login:hover {
+    background-color: #B983FF;
+    color: black;
+    
+}
+.esconder-form {
+    animation: esconder 1s forwards;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes campos {
+    from{
+        transform: translateX(-35%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes esconder {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
